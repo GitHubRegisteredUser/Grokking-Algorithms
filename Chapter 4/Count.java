@@ -6,9 +6,9 @@ import java.util.List;
 public class Count {
 
     static int count(List<Object> list, int n) {
-        if (n == 0 || list.isEmpty())
+        if (n == 0) {
             return 0;
-        else {
+        } else {
             return 1 + count(list, n - 1);
         }
     }
